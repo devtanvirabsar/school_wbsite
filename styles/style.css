@@ -79,6 +79,9 @@
 .mt-10px{
     margin-top: 10px;
 }
+.text-white{
+    color: #fff;
+}
 /* style for Desktop navigation */
 .logo .img{
     width: 40px;
@@ -222,6 +225,9 @@ ul li a{
 /* story section */
 #story_section{
     background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .story-card-A{
@@ -301,6 +307,43 @@ ul li a{
  footer .first{
     width: 30%;
  }
+ .Keep{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+ }
+ .social div{
+    width: 50px;
+    padding-left: 10px;
+ }
+    .social div img{
+        width: 100%;
+    }
+    .sch a{
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .second ul li{
+        margin-top: 10px;
+    }
+    .second ul li a{
+        color: #fff;
+    }
+    .card-1 .card-img, .card-2 .card-img, .card-3 .card-img{
+        width: 50%;
+    }
+    .card-1 .card-img img, .card-2 .card-img img, .card-3 .card-img img{
+        width: 100%;
+    }
 /* navigation for mobile */
 @media screen and (max-width: 575px) {
     /* CSS rules go here */
@@ -381,6 +424,53 @@ ul li a{
         flex-direction: column;
         flex-wrap: wrap;
         align-content: flex-start;
+        padding: 50px;
+    }
+    .f-logo{
+        width: 100%;
+    }
+    footer .f-logo img{
+        width: 50px;
+    }
+    footer .first, .second, .third{
+        width: 90%;
+    }
+    .f-logo{
+        width: 15%;
+        
+    }
+    .log h2{
+        color: #fff;
+        font-size: 25px;
+    }
+    .second ul li a{
+        color: #fff;
+        font-size: 20px;
+    }
+    .second ul li{
+        color: #fff;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .second{
+        margin-top: 10px;
+    }
+    .Keep{
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin: 20px 0;
+    }
+    .social div{
+        width: 30px;
+        padding-left: 10px;
+    }
+    .social div img{
+        width: 100%;
     }
 }
 /* end for navigation for mobile */
