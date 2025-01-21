@@ -61,6 +61,24 @@
 .d-block{
     display: block;
 }
+.mt-10{
+    margin-top: 5%;
+}
+.gap-50px{
+    gap: 50px;
+}
+.p-0{
+    padding: 0;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.bg-white{
+    background-color: #fff;
+}
+.mt-10px{
+    margin-top: 10px;
+}
 /* style for Desktop navigation */
 .logo .img{
     width: 40px;
@@ -136,6 +154,7 @@ ul li a{
 
 }
 
+
 /* curriculum section */
 .cards .card-1{
     width: 20%;
@@ -176,7 +195,112 @@ ul li a{
     color: #64C8FF;
     font-weight: 600;
 }
+.arrow_btn button{
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: rgb(254, 163, 1);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.cari-text{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50.5px;
+    letter-spacing: 0%;
+}
+#curriculum-bg{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* story section */
+#story_section{
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
 
+.story-card-A{
+    width: 35%;
+    border-radius: 10px;
+}
+.story-card-A .story-img{
+    width: 100%;
+}
+.story-card-A .story-img img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.story-card-A button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #3CD8E8;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -20px;
+    position: absolute;
+    margin-left: 20px;
+}
+/* story card for grid */
+.gird-card{
+    width: 40%;
+    
+}
+.story-card-1, .story-card-2, .story-card-3, .story-card-4{
+    width: 50%;
+    border-radius: 10px;
+}
+.story-card-1 #img, .story-card-2 #img, .story-card-3 #img, .story-card-4 #img{
+    width: 100%;
+}
+.story-card-1 #img img, .story-card-2 #img img, .story-card-3 #img img, .story-card-4 #img img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.story-card-1 button, .story-card-2 button, .story-card-3 button, .story-card-4 button{
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(149, 178, 38);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -20px;
+    position: absolute;
+    font-size: 0.8rem;
+    margin-left: 20px;
+    
+}
+.story-btn button{
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 120px;
+}
+.story-btn{
+    padding-bottom: 10%;
+}
+/* footer */
+ footer{
+    background-color: #01ACFD;
+    padding: 10%;
+ }
+ footer .first{
+    width: 30%;
+ }
 /* navigation for mobile */
 @media screen and (max-width: 575px) {
     /* CSS rules go here */
@@ -185,7 +309,7 @@ ul li a{
         gap: 70%;
         width: 100%;
     }
-    .logo h1, .ul, .btn, .hero-content h1 br, .arrow_btn{
+    .logo h1, .ul, .btn, .hero-content h1 br, .arrow_btn, .story-card-A{
         display: none;
     }
     .menu-btn{
@@ -240,6 +364,23 @@ ul li a{
         font-size: 1rem;
         line-height: 20px;
         text-align: center;
+    }
+    /* .gird-card, .part-one, .part-two{
+        flex-direction: column;
+    } */
+    .story-card-1, .story-card-2, .story-card-3, .story-card-4{
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+    .gird-card{
+        width: 90%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
 }
 /* end for navigation for mobile */
