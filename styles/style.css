@@ -69,12 +69,56 @@ ul li a{
 }
 /* Desktop navigation end */
 
+/* style for hero section */
+.hero-container{
+    /* gap: 20%; */
+}
+.hero-container .hero-content{
+    width: 50%;
+}
+.hero-content h1{
+    color: #111111;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.hero-content p{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.enroll_btn button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #111111;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.hero-container .img{
+    width: 400px;
+}
+.hero-container .img img{
+    width: 100%;
+
+}
+
 /* navigation for mobile */
 @media screen and (max-width: 575px) {
     /* CSS rules go here */
     header{
         border: 1px solid rgb(254, 163, 1);
         gap: 70%;
+        width: 100%;
     }
     .logo h1, .ul, .btn{
         display: none;
@@ -94,6 +138,14 @@ ul li a{
     }
     .img img{
         width: 100%;
+    }
+    /* responsive hero section */
+    .hero-container{
+        flex-direction: column-reverse;
+    }
+    .hero-content{
+        display: flex;
+        flex-direction: column;
     }
 
 }
