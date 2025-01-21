@@ -472,5 +472,8 @@ ul li a{
     .social div img{
         width: 100%;
     }
+    .story-card-1 button, .story-card-2 button, .story-card-3 button, .story-card-4 button{
+        font-size: 10px;
+    }
 }
 /* end for navigation for mobile */
